@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9de7fd;
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    background-color: #8ae4ff;
+    box-shadow: -3px 3px 15px 1px #00526b38;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #0098c7;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.result-container {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 12px 10px;
+    font-size: 1.1em;
+    background-color: #ffffff3b;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+#result {
+    color: #0098c7;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.result-container .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.far {
+    position: relative;
+    bottom: 6px;
+    right: 7px;
+}
+
+.btn {
+    border: none;
+    background-color: #0098c7a9;
+    color: #fff;
+    font-size: 1.2em;
+    padding: .5em 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-generate {
+    display: block;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+.settings {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: .5em 0;
+}
+
+.setting {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .8em 0;
+}
+
+input {
+    cursor: pointer;
+}
+
+input[type=number] {
+    width: 50%;
+    padding: .5em;
+    border: none;    
+    border-radius: 5px;
+    background-color: #0098c7;
+    color: #fff;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 300px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    #result {
+        font-size: 1em;
+    }
+    
+    .setting {
+        font-size: .8em;
+    }
+
+    .btn-generate {
+        font-size: 1em;
+    }
+}
